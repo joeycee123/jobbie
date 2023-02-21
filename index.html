@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <nav class="navbar">
+      <!-- Logo -->
+      <div class="logo"><img src="logo.png" alt="Logo" /></div>
+
+      <!-- Links -->
+      <a href="#">Home</a>
+      <a href="#">Find</a>
+      <a href="#">Profile</a>
+
+      <!-- Search bar -->
+      <input type="text" class="search-bar" placeholder="Search..." />
+    </nav>
+  </head>
+  <body>
+    <!-- leaflet map -->
+    <div id="map"></div>
+    <div id="profile">
+      <div class="container">
+        <div class="exitButton">X</div>
+        <div class="image-container">
+          <img src="sas.JPG" alt="Your Image" />
+        </div>
+        <h1 class="personName">Sas Sasserson</h1>
+        <h2>4.9⭐</h2>
+      </div>
+      <div class="container">
+        <div class="jobListing">
+          <div class="jobType">
+            <h1>Walking 🚶‍♂️</h1>
+          </div>
+          <div class="jobPay">
+            <h1>$50 per hour</h1>
+          </div>
+          <div class="jobTime">
+            <h1>Time: 2 hours</h1>
+          </div>
+          <div class="jobDescription">
+            <h3>
+              I need someone to take me for a walk, as my owner is currently
+              working long hours, I am a nice Doggy and i like pets
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="applyText">
+          <h3>
+            Interested? <br />
+            Click the button below to apply..
+          </h3>
+        </div>
+        <button class="styled-button">Apply</button>
+      </div>
+      <div class="container"></div>
+    </div>
+    <div id="newJob">
+      <div class="container">
+        <div class="exitButton" id="newJobExitButton">X</div>
+        <img class="logo-img" src="logo.png" alt="jobbie_logo" />
+        <p class="newJobText">Please add a job title below ⬇</p>
+        <input type="text" class="title-field" id="jobTitle" placeholder="Job title..." />
+      </div>
+      <div class="container">
+        <div class="newJobTypeDiv">
+          <p class="newJobText">
+            Select the Job <br />
+            type below ⬇
+          </p>
+          <select id="newJobType">
+            <option value="General">General</option>
+            <option value="Building">Building</option>
+            <option value="Electrical">Electrical</option>
+            <option value="Plumbing">Plumbing</option>
+            <option value="Gardening">Gardening</option>
+            <option value="Painting">Painting</option>
+            <option value="Disposal">Disposal</option>
+            <option value="DogCare">Dog Walking</option>
+            <option value="Cleaning">Cleaning</option>
+          </select>
+        </div>
+        <div class="newJobPayDiv">
+          <p class="newJobText">
+            Select the price 💰<br />
+            below ⬇
+          </p>
+          <input type="number" id="jobPrice" placeholder="$" />
+        </div>
+        <div class="newJobTimeDiv">
+          <p class="newJobText">
+            Select the Time ⏱ <br />
+            below ⬇
+          </p>
+          <input type="text" id="jobTime" placeholder="Time in hours" />
+        </div>
+        <div class="newJobDescriptionDev">
+          <p class="newJobText">Write a description of the job below.</p>
+          <input type="text" class="input-field" id='newJobDescription'/>
+        </div>
+      </div>
+      <div class="photo-div container" id="container">
+        <p class="newJobText" id="addJobPhotosText">Add images of the Job below</p>
+         <input type="file" id="file-input" multiple>
+          <div id="image-container"class="newImageContainer" ></div>
+    </div>
+    <div class="smallContainer"> 
+       <button class="submitButton" id="newJobSubmit">Submit</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

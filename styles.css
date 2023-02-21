@@ -1,0 +1,361 @@
+#map {
+  height: 1000px;
+  width: 100%;
+  display: inline-block;
+}
+
+h1 {
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 35%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+img {
+  height: 50px;
+  margin-right: 20px;
+}
+
+select {
+  width: 60%;
+  padding: 15px 20px;
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+  margin-top: -13px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-image: url(data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23007CB2%22%20d%3D%22M287%2069.4a17.6%2017.6%200%200%200-13-5.4H18.4c-5%200-9.3%201.8-12.9%205.4A17.6%2017.6%200%200%200%200%2082.2c0%205%201.8%209.3%205.4%2012.9l128%20127.9c3.6%203.6%207.8%205.4%2012.8%205.4s9.2-1.8%2012.8-5.4L287%2095c3.5-3.5%205.4-7.8%205.4-12.8%200-5-1.9-9.2-5.5-12.8z%22%2F%3E%3C%2Fsvg%3E);
+  background-repeat: no-repeat;
+  background-position: right 20px top 50%, 0 0;
+  background-size: 20px auto;
+}
+
+select:focus {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+/* Style for the navigation bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  height: 60px;
+  color: #fff;
+  padding: 0 20px;
+  font-family: sans-serif;
+}
+
+/* Style for the logo */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* Style for the links */
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  margin-right: 20px;
+  font-family: sans-serif;
+}
+
+/* Style for the search bar */
+.search-bar {
+  width: 200px;
+  height: 30px;
+  border-radius: 15px;
+  border: 1px solid #fff;
+  padding: 0 10px;
+}
+
+/* This code uses the position: fixed property to fix the header to the top of the viewport, and the top and right properties to position the header at the top right of the viewport. The width property is set to 35% to specify the width of the navigation bar, and the height property is set to 100% to specify the height of the header.
+
+The display: flex property is used on the header, navigation bar, and list elements to control the layout and alignment of the elements. The align-items: center property is used to center the elements vertically, and the justify-content: flex-end property is used to right-align the links within the navigation bar */
+
+#profile {
+  width: 35%;
+  height: 1000px;
+  float: right;
+  background-color: rgb(230, 242, 247);
+  display: none;
+}
+
+.container {
+  width: 100%;
+  height: 300px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid white;
+  text-align: center;
+  position: relative;
+}
+
+.image-container {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid white;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.personName {
+  color: #181717;
+  font-size: 45px;
+  margin-bottom: -22px;
+}
+
+.jobDescription {
+  text-align: center;
+}
+
+.styled-button {
+  background-color: rgb(44, 169, 228);
+  color: white;
+  padding: 20px 100px;
+  font-size: medium;
+  border-radius: 5px;
+  border: none;
+  font-family: sans-serif;
+  cursor: pointer;
+}
+
+.applyText {
+  text-align: center;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.exitButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 28px;
+  height: 26px;
+  background-color: #fff;
+  border-radius: 15px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+button.popupButtons {
+  margin-left: 35 px !important;
+  margin-top: 10px;
+  text-align: center;
+  width: 90px;
+}
+
+#newJob {
+  width: 35%;
+  height: 1000px;
+  float: right;
+  background-color: rgb(230, 242, 247);
+  display: none;
+}
+
+.newJobText {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.newJobTypeDiv {
+  position: absolute;
+  top: 10px;
+  left: -15px;
+  height: 50%;
+  width: 50%;
+  z-index: 1;
+}
+
+.newJobPayDiv {
+  position: absolute;
+  top: 10px;
+  padding-right: 18px;
+  right: 0;
+  height: 65%;
+  width: 90%;
+}
+
+#jobPrice {
+  width: 10%;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+  margin-top: -16px;
+  -moz-appearance: textfield;
+}
+
+#jobprice:focus {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+#jobTime {
+  width: 10%;
+  padding: 15px 20px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+  margin-top: -16px;
+  -moz-appearance: textfield;
+}
+
+#jobTime:focus {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.newJobTimeDiv {
+  position: absolute;
+  top: 3%;
+  right: 0;
+  height: 65%;
+  width: 33.33%;
+  padding-right: 10px;
+}
+
+.newJobImage {
+  float: left;
+  top: 10px;
+  left: 10px;
+  width: 150px;
+  height: 75px;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.newImageContainer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#file-input {
+  padding-bottom: 10px;
+}
+
+.photo-div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 10px;
+}
+
+.submitButton {
+  justify-content: flex-end;
+}
+
+.smallContainer {
+  width: 100%;
+  height: 52px;
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid white;
+  text-align: center;
+  position: relative;
+}
+
+.submitButton {
+  display: inline-block;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  margin-top: -10px;
+  background-color: #333;
+  color: #fff;
+  border: 2px solid #333;
+}
+
+.submitButton:hover {
+  background-color: #fff;
+  color: #333;
+  border-color: #333;
+}
+
+.input-field {
+  width: 76%;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+  margin-top: 7px;
+}
+
+.input-field:focus {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.newJobDescriptionDev {
+  padding-top: 100px;
+}
+
+.title-field {
+  width: 50%;
+  padding: 20px 50px;
+  font-size: 18px;
+  font-weight: 400;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgb(0 0 0 / 10%);
+  transition: all 0.2s ease-in-out;
+  margin-top: 7px;
+}
+
+.title-field:focus {
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  outline: none;
+}
+
+.logo-img {
+  height: 81px;
+  margin-right: 20px;
+  width: 200px;
+}
